@@ -132,7 +132,7 @@ export default async function Home() {
         {/* Footer */}
         <footer id="contact" className="py-20 mt-10 border-t border-slate-100 text-center">
           <h2 className="font-serif text-3xl font-bold mb-6">Let's Connect</h2>
-          <a href="mailto:contact@sudiptabanerjee.com" className="text-lg font-medium text-blue-600 hover:underline">contact@sudiptabanerjee.com</a>
+          <a href="mailto:hello@sudiptabanerjee.com" className="text-lg font-medium text-blue-600 hover:underline">hello@sudiptabanerjee.com</a>
         </footer>
 
       </main>
