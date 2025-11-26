@@ -34,6 +34,7 @@ export default defineType({
           { title: 'Finance', value: 'Finance' },
           { title: 'Personal', value: 'Personal' },
           { title: 'Tech', value: 'Tech' },
+          { title: 'Leadership', value: 'Leadership' },
         ],
       },
     }),
