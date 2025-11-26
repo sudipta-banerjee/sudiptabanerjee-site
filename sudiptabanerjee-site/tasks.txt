@@ -2,3 +2,22 @@
 2. Get comfortable with deployment
 3. Update MBA project
 4. Add images
+
+
+
+
+-------
+
+GIT
+---
+git add .
+git commit -m "Commit message here"
+git push
+
+SANITY STUDIO (HEADLESS CMS)
+---
+https://www.sanity.io/organizations/oOlGqLm9M/project/aqsq7vaq/usage
+
+HOSTING
+---
+https://vercel.com/sudipta-banerjees-projects/sudiptabanerjee-site-com/deployments
