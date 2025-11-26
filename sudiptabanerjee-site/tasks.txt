@@ -1,7 +1,8 @@
-1. Add multiple blogs
-2. Get comfortable with deployment
+1. Add multiple blogs - DONE
+2. Get comfortable with deployment (GIT url was wrong): DONE
 3. Update MBA project
 4. Add images
+5. Add blog category: sudiptabanerjee-site\src\sanity\schemaTypes\post.ts "defineField({      name: 'category',"
 
 
 

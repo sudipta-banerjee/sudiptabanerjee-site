@@ -3,18 +3,41 @@ import { PortableText } from "@portabletext/react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-// Define what a full post looks like
+// --- ADD THIS SECTION ---
+const ptComponents = {
+  marks: {
+    link: ({ children, value }: any) => {
+      // Check if the link is external (starts with http or https)
+      const isExternal = value.href.startsWith('http');
+      const target = isExternal ? '_blank' : undefined;
+      
+      // Security best practice for new tabs
+      const rel = isExternal ? 'noreferrer noopener' : undefined;
+      
+      return (
+        <a 
+          href={value.href} 
+          target={target} 
+          rel={rel} 
+          className="text-blue-600 hover:underline"
+        >
+          {children}
+        </a>
+      );
+    },
+  },
+};
+// ------------------------
+
 interface BlogPost {
   title: string;
   publishedAt: string;
-  body: any; // This is the rich text content
+  body: any;
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
-  // Await params for Next.js 15 compatibility
   const { slug } = await params;
 
-  // Query Sanity for the specific post by slug
   const post: BlogPost = await client.fetch(
     `*[_type == "post" && slug.current == $slug][0]{
       title,
@@ -24,7 +47,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     { slug }
   );
 
-  // If the post doesn't exist, show a 404 page
   if (!post) {
     notFound();
   }
@@ -32,13 +54,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans p-6 md:p-12">
       <div className="max-w-2xl mx-auto">
-        
-        {/* Back Button */}
         <Link href="/" className="text-sm text-slate-500 hover:text-slate-900 mb-8 block">
           &larr; Back to Home
         </Link>
 
-        {/* Header */}
         <header className="mb-10">
           <span className="text-sm text-slate-500 block mb-2">
             {new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
@@ -48,9 +67,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </h1>
         </header>
 
-        {/* The Main Content (Rich Text) */}
         <article className="prose prose-slate prose-lg lg:prose-xl">
-          <PortableText value={post.body} />
+          {/* --- UPDATE THIS LINE --- */}
+          <PortableText value={post.body} components={ptComponents} />
         </article>
         
       </div>
