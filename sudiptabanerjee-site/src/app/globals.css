@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Footer: constrain inline SVG images (email / LinkedIn) so they don't render at full intrinsic size */
+#contact a img {
+	width: 18px; /* icon width */
+	height: 18px; /* icon height */
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 0.5rem; /* spacing between icon and text */
+}
+
+/* Slightly larger icons on larger screens for readability */
+@media (min-width: 768px) {
+	#contact a img {
+		width: 20px;
+		height: 20px;
+	}
+}
