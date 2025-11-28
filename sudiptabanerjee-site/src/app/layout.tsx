@@ -15,16 +15,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.sudiptabanerjee.com"),
-  title: "Sudipta Banerjee: Bridging the gap between complex technology and strategic leadership",
+  title: "Sudipta Banerjee: Bridging Technology & Leadership",
   description: "Hello, I'm Sudipta. Bridging the gap between complex technology and strategic leadership. I specialize in leading hybrid teams in the AI-augmented era.",
   openGraph: {
-    title: "Sudipta Banerjee: Bridging the gap between complex technology and strategic leadership",
+    title: "Sudipta Banerjee: Bridging Technology & Leadership",
     description: "Hello, I'm Sudipta. Bridging the gap between complex technology and strategic leadership. I specialize in leading hybrid teams in the AI-augmented era.",
     url: "https://www.sudiptabanerjee.com",
     siteName: "Sudipta Banerjee",
     images: [
       {
-        url: "/og/social-share.png",
+        url: "/api/og",
         width: 1200,
         height: 630,
         alt: "Sudipta Banerjee - Leadership in Technology",
@@ -35,10 +35,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sudipta Banerjee: Bridging the gap between complex technology and strategic leadership",
+    title: "Sudipta Banerjee: Bridging Technology & Leadership",
     description: "Hello, I'm Sudipta. Bridging the gap between complex technology and strategic leadership. I specialize in leading hybrid teams in the AI-augmented era.",
     creator: "@sudipta2707",
-    images: ["/og/social-share.png"],
+    images: ["/api/og"],
   },
 };
 
