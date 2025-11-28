@@ -1,6 +1,6 @@
 3. Update MBA project
 4. Add images
-7. Optimie for social sharing
+7. Optimize for social sharing
 8. Google Analytics
 9. Search console
 10. without www to www domain

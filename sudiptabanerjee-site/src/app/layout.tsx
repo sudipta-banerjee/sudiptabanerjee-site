@@ -14,8 +14,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.sudiptabanerjee.com"),
   title: "Sudipta Banerjee: Bridging the gap between complex technology and strategic leadership",
   description: "Hello, I'm Sudipta. Bridging the gap between complex technology and strategic leadership. I specialize in leading hybrid teams in the AI-augmented era.",
+  openGraph: {
+    title: "Sudipta Banerjee: Bridging the gap between complex technology and strategic leadership",
+    description: "Hello, I'm Sudipta. Bridging the gap between complex technology and strategic leadership. I specialize in leading hybrid teams in the AI-augmented era.",
+    url: "https://www.sudiptabanerjee.com",
+    siteName: "Sudipta Banerjee",
+    images: [
+      {
+        url: "/og/social-share.png",
+        width: 1200,
+        height: 630,
+        alt: "Sudipta Banerjee - Leadership in Technology",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sudipta Banerjee: Bridging the gap between complex technology and strategic leadership",
+    description: "Hello, I'm Sudipta. Bridging the gap between complex technology and strategic leadership. I specialize in leading hybrid teams in the AI-augmented era.",
+    creator: "@sudipta2707",
+    images: ["/og/social-share.png"],
+  },
 };
 
 export default function RootLayout({
