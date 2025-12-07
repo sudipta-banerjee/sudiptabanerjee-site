@@ -1,8 +1,6 @@
 3. Update MBA project
 4. Add images
-7. Optimize for social sharing
-8. Google Analytics
-9. Search console
+
 10. without www to www domain
 11. Logo Clickable
 12. Blog page header footer etc
@@ -14,7 +12,9 @@
 2. Get comfortable with deployment (GIT url was wrong): DONE
 5. Add blog category: sudiptabanerjee-site\src\sanity\schemaTypes\post.ts "defineField({      name: 'category'," - DONE
 6. Blog external link open in new tab - DONE
-
+7. Optimize for social sharing - Done
+8. Google Analytics / TAG Manager - Done
+9. Search console - Done
 
 -------
 
