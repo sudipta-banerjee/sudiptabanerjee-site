@@ -17,6 +17,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.sudiptabanerjee.com"),
   title: "Sudipta Banerjee: Bridging Technology & Leadership",
   description: "Hello, I'm Sudipta. Bridging the gap between complex technology and strategic leadership. I specialize in leading hybrid teams in the AI-augmented era.",
+  icons: {
+    icon: [
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
+    ],
+  },
+  manifest: "/site.webmanifest",
+  appleWebApp: {
+    title: "sudiptabanerjee.com",
+  },
   openGraph: {
     title: "Sudipta Banerjee: Bridging Technology & Leadership",
     description: "Hello, I'm Sudipta. Bridging the gap between complex technology and strategic leadership. I specialize in leading hybrid teams in the AI-augmented era.",
