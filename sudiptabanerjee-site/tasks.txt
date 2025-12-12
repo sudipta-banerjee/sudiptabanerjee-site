@@ -1,11 +1,11 @@
 3. Update MBA project
 4. Add images
-
 10. without www to www domain
 11. Logo Clickable
 12. Blog page header footer etc
 13. Category clickable in blogs
 14. Blog footer add category clickable
+15. Home page background in top section full width
 
 
 1. Add multiple blogs - DONE
